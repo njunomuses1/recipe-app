@@ -11,10 +11,13 @@ import (
 var Client *mongo.Client
 var Database *mongo.Database
 
+
+
+
 // Initialize MongoDB connection
 func InitMongoDB() {
 	// Replace with your MongoDB URI (local or Atlas)
-	clientOptions := options.Client().ApplyURI("mongodb+srvnjunomoses1moseh4193@cluster0.lnglz.mongodb.net") // Use your URI here
+	clientOptions := options.Client().ApplyURI("mongodb+srv://mosesnjuno7:due5Ct1p0FQU2wbh@recipe.ok1di.mongodb.net/Recipe?retryWrites=true&w=majority") // Use your URI here
 
 	var err error
 	Client, err = mongo.Connect(context.Background(), clientOptions)
